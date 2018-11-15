@@ -4,7 +4,7 @@ from dataExtract import*
 from CreateDir import*
 
 #songName = "Better Now"
-artist = "pink floyd"
+artist = "Kanye West"
 path = '.\\artists\\' +artist.replace(" ",",")
 createDir(path)
 
