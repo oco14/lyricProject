@@ -20,7 +20,7 @@ def extract (file):
             singleWords.append(word)
         
     
-    wordAndCount = [(word,words.count(word)) for word in singleWords]
+    wordAndCount = { word:words.count(word) for word in singleWords}
     
     #closing the file
     filehandle.close()

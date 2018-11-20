@@ -75,7 +75,8 @@ def getSongLyricsToTXT (song, artist):
 
         #seperating the words and creating a file   
         songWords = extract(path+'\lyrics.txt')
-        songWords = sorted(songWords,key = lambda x: x[0])
+        sorted(songWords.keys())
+        #songWords = sorted(songWords,key = lambda x: x[0])
         #print (songWords)
         writeSong = open(path+"\words.txt", 'w')
         writeSong.write(str(songWords))
