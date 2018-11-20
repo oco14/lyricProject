@@ -1,5 +1,7 @@
 from pandas import DataFrame, read_csv
 from bs4 import BeautifulSoup
+from CreateDir import*
+from dataExtract import*
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -64,11 +66,20 @@ def getSongLyricsToTXT (song, artist):
     if(len(lyrics) != 0):
         lyrics[0] = lyrics[0].text.strip()
 
+        path = ('.\\artists\\'+artistSearch+ "\\"  +songSearch).replace(" ",",").replace("-",",")
         #creating txt file and writing song lyrics to txt file
-
-        lyricsFile = open(('.\\artists\\'+artistSearch+ "\\" +artistSearch+"," +songSearch+'.txt').replace(" ",",").replace("-",","), 'w')
+        createDir(path)
+        lyricsFile = open((path+'\lyrics.txt'), 'w')
         lyricsFile.write(lyrics[0])
         lyricsFile.close()
+
+        #seperating the words and creating a file   
+        songWords = extract(path+'\lyrics.txt')
+        songWords = sorted(songWords,key = lambda x: x[0])
+        #print (songWords)
+        writeSong = open(path+"\words.txt", 'w')
+        writeSong.write(str(songWords))
+        writeSong.close()
 
     
 #this function scrapes the web for the lyrics to a song and creates a txt output of the song
