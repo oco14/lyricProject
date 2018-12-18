@@ -1,0 +1,3 @@
+This is a continuation of my HackOhI/O 2018 project. This version has cleaner and readable code compaired to the original. 
+This project pulls songs lyrics from an artist and breaks the lyrics down into individual words and their respective counts. 
+In the future, I will be looking to analyze the data to support inferences made in reference to the artist.
