@@ -6,7 +6,7 @@ from CreateDir import*
 #songName = "Better Now"
 #artist = "Cake"
 #artists = ['Cake','Pink Floyd','Kanye West', 'Led Zeppelin']
-artists = ['Cake']
+artists = ['Cake','Kanye West','The Black Keys']
 for artist in artists:  
     path = '.\\artists\\' +artist.replace(" ",",")
     createDir(path)
