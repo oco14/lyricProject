@@ -1,3 +1,7 @@
-This is a continuation of my HackOhI/O 2018 project. This version has cleaner and readable code compaired to the original. 
-This project pulls songs lyrics from an artist and breaks the lyrics down into individual words and their respective counts. 
-In the future, I will be looking to analyze the data to support inferences made in reference to the artist.
+This projects goal was to web scrape the lyrics of certain songs and to break the songs down into individual words and number 
+of occurances for the use of analysis. Currently the code is set up to scrape a list of popular songs from a given list of artists 
+to then be used as descriped above. The songs will be stored in a directory named after the artist.
+This is a continuation of my HackOhI/O 2018 project. This version has updated , cleaner/readable code compaired to the original. 
+In the future, I will be looking to analyze the data to support inferences made in reference to the artist. The current version is 
+the second branch. To run the code, run the file finalTest.py. The current list of artists are set to some of my favorites
+Black Keys, Kanye West, Cake.
